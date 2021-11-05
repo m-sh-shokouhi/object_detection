@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+    خانه
+{% endblock title %}
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="file" class="form-label">فایل:</label>
+            <input name="file" type="file" class="form-control" id="file" aria-describedby="fileHelp">
+            <div id="fileHelp" class="form-text">تصویر مورد نظر را انتخاب کنید</div>
+        </div>
+        <div class="mb-3">
+            <label for="fileName" class="form-label">نام:</label>
+            <input name="name" type="password" class="form-control" id="fileName">
+        </div>
+        <button type="submit" class="btn btn-primary">ارسال</button>
+    </form>
+{% endblock content %}
